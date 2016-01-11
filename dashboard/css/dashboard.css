@@ -1,0 +1,17 @@
+.center {
+    margin: auto;
+    padding: 30px;
+}
+    
+a {
+    text-decoration: none;
+}
+
+.line-chart {
+    padding: 50px;
+}
+
+.table {
+    margin-top: 60px;
+}
+
