@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <script src="js-test.js"></script>
+  <body>
+    <script type="text/javascript">
+      description("Test EME permission callbacks in WebView");
+      window.jsTestIsAsync = true;
+
+      function eme() {
+      // https://w3c.github.io/encrypted-media/#requestMediaKeySystemAccess
+      // Tries multiple configuration per key system. The configurations are in
+      // descending order of privileges such that a supported permission-requiring
+      // configuration should be attempted before a configuration that does not
+      // require permissions.
+
+      var knownKeySystems = [
+        "com.example.somesystem",  // Ensure no real system is the first tried.
+        "com.widevine.alpha",
+        "com.microsoft.playready",
+        "com.adobe.primetime",
+        "com.apple.fps.2_0",
+        "com.apple.fps",
+        "com.apple.fps.1_0",
+        "com.example.somesystem"  // Ensure no real system is the last tried.
+      ];
+      var tryKeySystem = function(keySystem) {
+        console.log("keySystem is " + keySystem);
+        navigator.requestMediaKeySystemAccess(
+          keySystem,
+          [
+            { distinctiveIdentifier: "required",
+              persistentState: "required",
+              label: "'distinctiveIdentifier' and 'persistentState' required"
+            },
+            { distinctiveIdentifier: "required",
+              label: "'distinctiveIdentifier' required"
+            },
+            { persistentState: "required",
+              label: "'persistentState' required"
+            },
+            { label: "empty" }
+          ]
+        ).then(
+          function (mediaKeySystemAccess) {
+            console.log("eme success");
+          },
+          function (error) {
+            if (knownKeySystems.length > 0)
+              return tryKeySystem(knownKeySystems.shift());
+            debug("onError: code" + error.code + ", message=" + error.message);
+            finishJSTest();
+            }
+        );
+      };
+      tryKeySystem(knownKeySystems.shift());
+    }
+    eme();
+    </script>
+  </body>
+</html>
