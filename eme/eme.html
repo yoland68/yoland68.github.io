@@ -35,6 +35,7 @@
         ).then(
           function (mediaKeySystemAccess) {
             console.log("eme success");
+            finishJSTest();
           },
           function (error) {
             debug("onError: code" + error.code + ", message=" + error.message);
