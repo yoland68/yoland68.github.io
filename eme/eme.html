@@ -4,55 +4,46 @@
   <body>
     <script type="text/javascript">
       description("Test EME permission callbacks in WebView");
-      function eme() {
-        // https://w3c.github.io/encrypted-media/#requestMediaKeySystemAccess
-        // Tries multiple configuration per key system. The configurations are in
-        // descending order of privileges such that a supported permission-requiring
-        // configuration should be attempted before a configuration that does not
-        // require permissions.
+      window.jsTestIsAsync = true;
 
-        var knownKeySystems = [
-          "com.example.somesystem",  // Ensure no real system is the first tried.
-          "com.widevine.alpha",
-          "com.microsoft.playready",
-          "com.adobe.primetime",
-          "com.apple.fps.2_0",
-          "com.apple.fps",
-          "com.apple.fps.1_0",
-          "com.example.somesystem"  // Ensure no real system is the last tried.
-        ];
-        var tryKeySystem = function(keySystem) {
-          navigator.requestMediaKeySystemAccess(
-            keySystem,
-            [
-              { distinctiveIdentifier: "required",
-                persistentState: "required",
-                label: "'distinctiveIdentifier' and 'persistentState' required"
-              },
-              { distinctiveIdentifier: "required",
-                label: "'distinctiveIdentifier' required"
-              },
-              { persistentState: "required",
-                label: "'persistentState' required"
-              },
-              { label: "empty" }
-            ]
-          ).then(
-            function (mediaKeySystemAccess) {
-              debug("eme success");
-              finishJSTest();
+      // https://w3c.github.io/encrypted-media/#requestMediaKeySystemAccess
+      // Tries multiple configuration per key system. The configurations are in
+      // descending order of privileges such that a supported permission-requiring
+      // configuration should be attempted before a configuration that does not
+      // require permissions.
+
+      // TODO(yolandyan) Look into whehther more key system need to be added
+      var chromeKeySystem = "com.widevine.alpha"
+
+      var tryKeySystem = function(keySystem) {
+        console.log("keySystem is " + keySystem);
+        navigator.requestMediaKeySystemAccess(
+          keySystem,
+          [
+            { distinctiveIdentifier: "required",
+              persistentState: "required",
+              label: "'distinctiveIdentifier' and 'persistentState' required"
             },
-            function (error) {
-              if (knownKeySystems.length > 0)
-                return tryKeySystem(knownKeySystems.shift());
-              testFailed("onError: code" + error.code + ", message=" + error.message);
-              finishJSTest();
-            }
-          );
-        };
-        tryKeySystem(knownKeySystems.shift());
-      }
-      eme();
+            { distinctiveIdentifier: "required",
+              label: "'distinctiveIdentifier' required"
+            },
+            { persistentState: "required",
+              label: "'persistentState' required"
+            },
+            { label: "empty" }
+          ]
+        ).then(
+          function (mediaKeySystemAccess) {
+            console.log("eme success");
+          },
+          function (error) {
+            debug("onError: code" + error.code + ", message=" + error.message);
+            finishJSTest();
+          }
+        );
+      };
+
+      tryKeySystem(chromeKeySystem);
     </script>
   </body>
 </html>
