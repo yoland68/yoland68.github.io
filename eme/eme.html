@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <script src="js-test.js"></script>
+  <script src="./js-test.js"></script>
   <body>
     <script type="text/javascript">
-      description("Test EME permission callbacks in WebView");
+      description("Test EME callbacks in WebView");
       window.jsTestIsAsync = true;
 
-      // https://w3c.github.io/encrypted-media/#requestMediaKeySystemAccess
-      // Tries multiple configuration per key system. The configurations are in
-      // descending order of privileges such that a supported permission-requiring
-      // configuration should be attempted before a configuration that does not
-      // require permissions.
-
-      // TODO(yolandyan) Look into whehther more key system need to be added
+      // TODO(yolandyan) Look into whether more key system need to be added
       var chromeKeySystem = "com.widevine.alpha"
 
       var tryKeySystem = function(keySystem) {
-        console.log("keySystem is " + keySystem);
+        debug("keySystem is " + keySystem);
         navigator.requestMediaKeySystemAccess(
           keySystem,
           [
@@ -34,7 +28,7 @@
           ]
         ).then(
           function (mediaKeySystemAccess) {
-            console.log("eme success");
+            debug("EME success");
             finishJSTest();
           },
           function (error) {
