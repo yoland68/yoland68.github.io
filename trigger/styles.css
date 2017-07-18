@@ -240,7 +240,21 @@ html, body {
 .mdl-trigger .mdl-menu__container {
   z-index: 99;
 }
-
+@media all and (min-width: 960px) {
+    h1 {
+        font-size: 3.5vw;
+    }
+}
+@media all and (min-width: 600px) and (max-width: 959px) {
+    h1 {
+        font-size: 4.0vw;
+    }
+}
+@media all and (max-width: 599) and (min-width: 50px) {
+    h1 {
+        font-size: 5.0vw;
+    }
+}
 [v-cloak] {
     display: none;
 }
