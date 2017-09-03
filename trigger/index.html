@@ -37,6 +37,9 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div><h1>Total Triggers: {{ triggers.length }} </h1></div>
+          </section>
           <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
@@ -61,6 +64,15 @@
         data: {
           triggers: [
             {
+              title: 'Ocha urge',
+              show: false,
+              responses: [
+                '- Use trigger',
+                '- Remember all trigger names',
+                '- Read through all trigger names',
+                '- Read through one trigger content',
+              ]},
+            {
               title: 'LRPNTR / YAMV',
               show: false,
               responses: [
@@ -81,37 +93,12 @@
                 '- Listen to an eps of podcast',
                 ]},
             {
-              title: 'Can not decide on which plan',
+              title: 'Can not decide what to do',
               show: false,
               responses: [
                 '0. 10 Deep breath',
                 '1. Set 10 min timer',
                 '2. Make two non wasteful plans and coin toss',
-                ]},
-            {
-              title: 'Get home after 6pm',
-              show: false,
-              responses: [
-                '0. PWKG',
-                '1. shower',
-                ]},
-            {
-              title: 'After P-reminder change',
-              show: false,
-              response: [
-                '0. Add previous one to old friends',
-                ]},
-            {
-              title: 'After lunch',
-              show: false,
-              response: [
-                '0. floss',
-                ]},
-            {
-              title: 'TB',
-              show: false,
-              responses: [
-                '- muscle contraction exercise 50x',
                 ]},
             {
               title: 'Boredom time on bus',
@@ -134,22 +121,6 @@
                 '- Ukulele',
                 '- Podcast',
                 ]},
-            {
-              title: 'Think about to go home early (before 7pm)',
-              show: false,
-              responses: [
-                '0. Change location (office to conf room, sofa/bed to desk, room to kitchen, home to work)',
-                '- Long hike',
-                '- Workout',
-                '- Take a shower',
-                ]},
-            {
-              title: 'Sudden Free time',
-              show: false,
-              responses: [
-                '0. Replan today on notebook',
-                '- shower',
-              ]},
             {
               title: 'Boredom breaktime',
               show: false,
@@ -175,6 +146,23 @@
                 '- Take a walk',
                 '- Look up accomplished people'
                 ]},
+
+            {
+              title: 'Want to go home early',
+              show: false,
+              responses: [
+                '0. Change location (office to conf room, sofa/bed to desk, room to kitchen, home to work)',
+                '- Long hike',
+                '- Workout',
+                '- Take a shower',
+                ]},
+            {
+              title: 'Sudden Free time',
+              show: false,
+              responses: [
+                '0. Replan today on notebook',
+                '- shower',
+              ]},
             {
               title: 'Ready to waste some time (L/Y)',
               show: false,
@@ -199,7 +187,26 @@
                 '1. imagine start, process, end',
                 '2. take a walk',
                 '3. reset goal',
-                ]}
+                ]},
+            {
+              title: 'TB',
+              show: false,
+              responses: [
+                '- muscle contraction exercise 50x',
+                ]},
+            {
+              title: 'After P-reminder change',
+              show: false,
+              responses: [
+                '0. Add previous one to old friends',
+                ]},
+            {
+              title: 'After lunch',
+              show: false,
+              responses: [
+                '0. floss',
+                ]},
+
           ]
         },
         methods: {
