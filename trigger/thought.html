@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="a front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Yoland's Triggers</title>
+    <title>Throughs Triggers</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,7 +38,7 @@
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div><h1>Total Triggers: {{ triggers.length }} </h1></div>
+            <div><h1>Total Thoughts Triggers: {{ triggers.length }} </h1></div>
           </section>
           <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
@@ -64,15 +64,6 @@
         data: {
           triggers: [
             {
-              title: 'Ocha urge',
-              show: false,
-              responses: [
-                '- Use trigger',
-                '- Remember all trigger names',
-                '- Read through all trigger names',
-                '- Read through one trigger content',
-              ]},
-            {
               title: 'LRPNT / YAV',
               show: false,
               responses: [
@@ -83,22 +74,16 @@
                 '- Look up accomplished people.',
                 ]},
             {
-              title: 'Get to work',
+              title: 'Procrastination/Unwilling To Work',
               show: false,
               responses: [
-                '0. Take 5',
-                '1. Bring out the notes and switch',
-                '2. Plan today',
-                '3. Start with pomo',
-                ]},
-            {
-              title: 'Unwilling To Work',
-              show: false,
-              responses: [
-                '- Change location',
+                '- Change location (office to conf room, sofa/bed to desk, room to kitchen)',
+                '- Deep breath 10 times',
+                '- Play a game of agar',
                 '- Take a walk/hike',
                 '- Listen to upbeat and calm music',
                 '- Open vimwiki and write out vimwiki',
+                '- Look up accomplished people',
                 '- Listen to an eps of podcast',
                 ]},
             {
@@ -110,14 +95,23 @@
                 '2. Make two non wasteful plans and coin toss',
                 ]},
             {
-              title: 'Boredom time on bus',
+              title: 'Think it is too late for me to do x',
               show: false,
               responses: [
-                '0. NIU -> gain Youtube reward after home',
-                '- Podcast',
-                '- Chat with friends and fam',
-                '- wunderlist',
-                '- vimwiki',
+                '0. imagine the start, process, and end',
+                '- Change location',
+                '- take a walk',
+                '- reset goal',
+                '- if still do not want it, do half',
+                ]},
+            {
+              title: 'Want to go home early',
+              show: false,
+              responses: [
+                '- Change location (office to conf room, sofa/bed to desk, room to kitchen, home to work)',
+                '- Long hike',
+                '- Workout',
+                '- Take a shower',
                 ]},
             {
               title: 'Boredom normal time',
@@ -146,40 +140,6 @@
                 '- Check vimwiki',
                 ]},
             {
-              title: 'Procrastination',
-              show: false,
-              responses: [
-                '- Change location (office to conf room, sofa/bed to desk, room to kitchen)',
-                '- Write down things to do',
-                '- Play a game of agar',
-                '- Deep breath 10 times',
-                '- Take a walk',
-                '- Look up accomplished people'
-                ]},
-
-            {
-              title: 'Want to go home early',
-              show: false,
-              responses: [
-                '- Change location (office to conf room, sofa/bed to desk, room to kitchen, home to work)',
-                '- Long hike',
-                '- Workout',
-                '- Take a shower',
-                ]},
-            {
-              title: '5 Min',
-              show: false,
-              responses: [
-                '- Just Do It',
-              ]},
-            {
-              title: 'Sudden Free time',
-              show: false,
-              responses: [
-                '0. Replan today on notebook',
-                '- shower',
-              ]},
-            {
               title: 'Ready to waste some time (L/Y)',
               show: false,
               responses: [
@@ -189,82 +149,25 @@
                 '3. When time is up, trigger L/Y',
                 ]},
             {
-              title: 'Think it is too late for me to do x',
+              title: '5 Min',
               show: false,
               responses: [
-                '0. imagine the start, process, and end',
-                '- Change location',
-                '- take a walk',
-                '- reset goal',
-                '- if still do not want it, do half',
-                ]},
+                '- Just Do It',
+              ]},
             {
-              title: 'Car',
+              title: 'Ocha urge',
               show: false,
               responses: [
-                '- Podcast',
-                ]},
+                '- Use trigger',
+                '- Remember all trigger names',
+                '- Read through all trigger names',
+                '- Read through one trigger content',
+              ]},
             {
               title: 'TB',
               show: false,
               responses: [
                 '- muscle contraction exercise 50x',
-                ]},
-            {
-              title: 'After P-reminder change',
-              show: false,
-              responses: [
-                '0. Add previous one to old friends',
-                ]},
-            {
-              title: 'After lunch',
-              show: false,
-              responses: [
-                '0. floss',
-                '1. Learn japanese',
-                ]},
-            {
-              title: '6:20/6:30 At Work',
-              show: false,
-              responses: [
-                '(Optional) tear down (wrap up, agar game)',
-                '0. bring ipad + laptop',
-                '1. go to gym and work out',
-                '2. dinner + NIU',
-              ]},
-            {
-              title: 'Get home/hotel',
-              show: false,
-              responses: [
-                '0. PGKW',
-                ]},
-            {
-              title: 'Hand around head area',
-              show: false,
-              responses: [
-                '-  press 5 times and leave',
-                ]},
-            {
-              title: '#EXP Shower trigger',
-              show: false,
-              responses: [
-                '0. go home',
-                'Shower instantly (only rinse if showered in the morning)',
-                ]},
-            {
-              title: '#EXP Lips trigger',
-              show: false,
-              responses: [
-                '0. put mosturizer',
-                ]},
-            {
-              title: '#EXP Head skin trigger',
-              show: false,
-              responses: [
-                'pre: press 10 times',
-                '0. press each side 10 times',
-                '1. punish hand 10 times',
-                'if twice: put on hat',
                 ]},
           ]
         },
@@ -275,5 +178,19 @@
         }
       })
     </script>
+    <!-- Old triggers
+            {
+              title: 'Boredom time on bus',
+              show: false,
+              responses: [
+                '0. NIU -> gain Youtube reward after home',
+                '- Podcast',
+                '- Chat with friends and fam',
+                '- wunderlist',
+                '- vimwiki',
+                ]},
+
+    -->
+    
   </body>
 </html>
