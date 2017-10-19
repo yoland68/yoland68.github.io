@@ -43,7 +43,7 @@
           <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h1 class="mdl-cell mdl-cell--12-col">{{ trigger.title }}</h1>
+                <h1 class="mdl-cell mdl-cell--12-col">{{ trigger.title }} ({{trigger.responses.length}})</h1>
                 <div v-if="trigger.show" v-for="response in trigger.responses" class="section__text mdl-cell mdl-cell--10-col">
                   <h3>{{response}}</h3>
                 </div>
