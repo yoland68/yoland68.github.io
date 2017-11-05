@@ -258,3 +258,7 @@ html, body {
 [v-cloak] {
     display: none;
 }
+
+.gray-nav {
+    background-color: #616161
+}
