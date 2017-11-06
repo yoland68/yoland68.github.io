@@ -259,6 +259,9 @@ html, body {
     display: none;
 }
 
-.gray-nav {
+.yo-gray-nav {
     background-color: #616161
 }
+
+.yo-clickable {
+    cursor: pointer

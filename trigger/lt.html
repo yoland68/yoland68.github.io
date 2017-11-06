@@ -35,13 +35,13 @@
   </head>
   <body class="mdl-trigger mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="mdl-layout__header mdl-layout__header--waterfall gray-nav mdl-shadow--2dp">
+      <div class="mdl-layout__header mdl-layout__header--waterfall yo-gray-nav mdl-shadow--2dp">
         <div class="mdl-layout__header-row">
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <!-- Navigation -->
           <div>
-            <nav class="gray-nav mdl-navigation">
+            <nav class="yo-gray-nav mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lt.html">Time/Location</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="thought.html">Thought</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="event.html">Event</a>
@@ -56,7 +56,7 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div><h1>Total Time/Location Triggers: {{ triggers.length }} </h1></div>
           </section>
-          <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp yo-clickable">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h1 class="mdl-cell mdl-cell--12-col">{{ trigger.title }} ({{trigger.responses.length}})</h1>
