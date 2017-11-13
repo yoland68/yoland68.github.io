@@ -42,6 +42,7 @@
           <!-- Navigation -->
           <div>
             <nav class="yo-gray-nav mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Dashboard</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lt.html">Time/Location</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="thought.html">Thought</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="event.html">Event</a>
@@ -73,7 +74,7 @@
       </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://unpkg.com/vue"></script>
+    <script src="vue.min.js"></script>
     <script charset="utf-8">
       var overview = new Vue({
         el: '#overview',
@@ -98,6 +99,7 @@
                 '- Play a game of agar',
                 '- Take a walk/hike',
                 '- Listen to upbeat and calm music',
+                '- Youtube Waitlist',
                 '- Open vimwiki and write out vimwiki',
                 '- Look up accomplished people',
                 '- Listen to an eps of podcast',
@@ -138,6 +140,7 @@
                 '- Open up a vimwiki project page try pick a thing to work on',
                 '- Wunderlist inbox/NUI',
                 '- Ukulele',
+                '- Youtube Waitlist',
                 '- Podcast',
                 ]},
             {
@@ -153,6 +156,7 @@
                 '- Watch documentary',
                 '- Watch movie',
                 '- Read a kindle book',
+                '- Youtube Waitlist',
                 '- Check vimwiki',
                 ]},
             {
@@ -194,6 +198,16 @@
         }
       })
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109613354-1"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-109613354-1');
+    </script>
+
     <!-- Old triggers
             {
               title: 'Boredom time on bus',

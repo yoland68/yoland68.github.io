@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="a front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>LT Triggers</title>
+    <title>Event Triggers</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,10 +38,11 @@
       <div class="mdl-layout__header mdl-layout__header--waterfall yo-gray-nav mdl-shadow--2dp">
         <div class="mdl-layout__header-row">
           <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
           <div>
             <nav class="yo-gray-nav mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Dashboard</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lt.html">Time/Location</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="thought.html">Thought</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="event.html">Event</a>
@@ -54,7 +55,7 @@
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div><h1>Total Time/Location Triggers: {{ triggers.length }} </h1></div>
+            <div><h1>Total Event Triggers: {{ triggers.length }} </h1></div>
           </section>
           <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp yo-clickable">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
@@ -80,31 +81,17 @@
         data: {
           triggers: [
             {
-              title: 'Morning Routine',
+              title: 'Sudden Free time',
               show: false,
               responses: [
-                '- drink protein shake or cold water',
-                '- meditate for 5 minute',
-                '- 10 reps of pushups',
-                '- Japanese',
-                '- morning pages',
-                '- check emails, new, calendars',
-                '- brush teeth and go to work',
-            ]},
+                '0. Replan today on notebook',
+                '- shower',
+              ]},
             {
-              title: 'Get to work',
+              title: 'After TB',
               show: false,
               responses: [
-                '0. Take 5',
-                '1. Bring out the notes and switch',
-                '2. Plan today',
-                '3. Start with pomo',
-                ]},
-            {
-              title: 'Car',
-              show: false,
-              responses: [
-                '- Podcast',
+                '- Block reddit/chrome apps on Phone',
                 ]},
             {
               title: 'After lunch',
@@ -115,42 +102,26 @@
                 '2. (Optional) Learn japanese',
                 ]},
             {
-              title: '5:20/5:30 At Work',
+              title: 'Lips',
               show: false,
               responses: [
-                '(Optional) tear down (wrap up, agar game)',
-                '0. TB excercise',
-                '1. Eat dinner',
-                '2. Do NIU',
-              ]},
-            {
-              title: '6:20/6:30 At Work',
-              show: false,
-              responses: [
-                '(Optional) tear down (wrap up, agar game)',
-                '0. bring out ipad + laptop',
-                '1. go to gym and work out',
-              ]},
-            {
-              title: 'Get home/hotel',
-              show: false,
-              responses: [
-                '0. PGKW',
+                '0. put mosturizer',
                 ]},
             {
-              title: 'Night Routine',
+              title: 'Head skin',
               show: false,
               responses: [
-                '- (Optional) Shower',
-                '- lip moisture',
-                '- prep for tmr (clothes, protein, nintendo)',
-                '- block apps on phone',
-                '- night page',
-                '- (Optional) Review',
-                '- (Optional) Read',
-                '- meditate',
-            ]},
-
+                'pre: press 10 times',
+                '0. press each side 10 times',
+                '1. punish hand 10 times',
+                'if twice: put on hat',
+                ]},
+            {
+              title: 'After P-reminder change',
+              show: false,
+              responses: [
+                '0. Add previous one to old friends',
+                ]},
           ]
         },
         methods: {
@@ -160,6 +131,16 @@
         }
       })
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109613354-1"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+        gtag('config', 'UA-109613354-1');
+    </script>
+
+
     <!-- Old triggers
             {
               title: 'Boredom time on bus',
@@ -171,6 +152,7 @@
                 '- wunderlist',
                 '- vimwiki',
                 ]},
+
     -->
     
   </body>
