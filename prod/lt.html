@@ -45,7 +45,6 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Dashboard</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="lt.html">Time/Location</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="thought.html">Thought</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="event.html">Event</a>
             </nav>
           </div>
           <!-- Add spacer, to align navigation to the right in desktop -->
@@ -55,7 +54,7 @@
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div><h1>Total Time/Location Triggers: {{ triggers.length }} </h1></div>
+            <div><h1>Total Time/Event/Location Triggers: {{ triggers.length }} </h1></div>
           </section>
           <section v-cloak v-for="trigger in triggers" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp yo-clickable">
             <div v-on:click="trigger.show = !trigger.show" class="mdl-card mdl-cell mdl-cell--12-col">
@@ -84,33 +83,28 @@
               title: 'Morning Routine',
               show: false,
               responses: [
-                '1. drink protein shake or cold water',
-                '2. meditate',
-                '3. morning pages',
-                '4. brush teeth and go to work',
+                '1. Shower',
+                '2. drink water',
+                '3. meditate',
+                '4. morning pages',
             ]},
             {
               title: 'Get to work',
               show: false,
               responses: [
-                '1. Bring out the notes and switch',
+                '1. Bring out notebook & laptop',
                 '2. Check emails, calendar',
-                '3. Plant tree',
+                '3. Phone offtime',
                 '4. Plan today',
-                '5. Start with pomo',
-                ]},
-            {
-              title: 'Car',
-              show: false,
-              responses: [
-                '- Podcast',
+                '5. Start with music and pomo',
                 ]},
             {
               title: 'After lunch',
               show: false,
               responses: [
-                '1. floss',
+                '1. Get dinner food',
                 '2. Japanese',
+                '3. floss',
                 ]},
             {
               title: '5:20/5:30 At Work',
@@ -119,38 +113,31 @@
                 '(Optional) tear down (wrap up, agar game)',
                 '1. TB excercise',
                 '2. Eat dinner',
-                '3. Do NIU',
               ]},
-            {
-              title: '6:20/6:30 At Work',
-              show: false,
-              responses: [
-                '(Optional) tear down (wrap up, agar game)',
-                '1. bring out ipad + laptop',
-                '2. go to gym and work out',
-              ]},
-            {
-              title: 'Get home/hotel',
-              show: false,
-              responses: [
-                '1. PGKW',
-                ]},
             {
               title: 'Night Routine',
               show: false,
               responses: [
-                '- (Optional) Japanese',
-                '1. Shower/Floss',
+                '1. floss',
                 '2. prep shake',
                 '3. lip moisture',
-                '4. block apps on phone',
-                '5. prep clothes and nintendo',
+                '4. turn off phone',
+                '5. prep clothes',
                 '6. night page',
-                '- (Optional) Review',
-                '- (Optional) Read',
                 '7. meditate',
             ]},
-
+            {
+              title: 'Lips',
+              show: false,
+              responses: [
+                '1. put mosturizer',
+                ]},
+            {
+              title: 'Head skin',
+              show: false,
+              responses: [
+                'put on hat',
+                ]},
           ]
         },
         methods: {
