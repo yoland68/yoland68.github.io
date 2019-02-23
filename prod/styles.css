@@ -109,7 +109,7 @@ html, body {
 
 .mdl-trigger .mdl-layout__content section:not(:last-of-type) {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 2vw;
 }
 .mdl-trigger section.section--center {
   max-width: 860px;
@@ -177,7 +177,7 @@ html, body {
 .mdl-trigger section .section__text a {
   text-decoration: none;
 }
-.mdl-trigger section .section__circle-container > .section__circle-container__circle {
+.ThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughtThoughmdl-trigger section .section__circle-container > .section__circle-container__circle {
   width: 64px;
   height: 64px;
   border-radius: 32px;
@@ -240,6 +240,12 @@ html, body {
 .mdl-trigger .mdl-menu__container {
   z-index: 99;
 }
+
+h1 {
+    font-size: 30px
+    line-height: 1;
+}
+
 @media all and (min-width: 960px) {
     h1 {
         font-size: 40px;
