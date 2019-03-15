@@ -71,11 +71,11 @@ html, body {
   height: auto;
 }
 .mdl-trigger .mdl-card .mdl-card__supporting-text {
-  margin: 20px;
+  margin: 10px;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0;
+  padding: 10px;
   color: inherit;
   width: calc(100% - 80px);
 }
