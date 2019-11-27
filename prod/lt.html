@@ -66,7 +66,7 @@ Total NUNI cards: 82
                 </div>
               </div>
               <div v-if="trigger.show" class="mdl-card__actions">
-                <button v-on:click="setToFalse(trigger.show)" class="mdl-button"><h3>Hide</h3></button>
+                <button v-on:click="trigger.show = !trigger.show" class="mdl-button"><h3>Hide</h3></button>
               </div>
             </div>
           </section>
@@ -155,11 +155,11 @@ Total NUNI cards: 82
         },
         methods: {
           setToFalse: function(value) {
+            console.log(this);
+            console.log(value);
             value = false;
           },
           toggleClass: function(index) {
-            console.log(this);
-            console.log(index);
             this.$refs.el[index].classList.toggle("cross");
           }
         },
@@ -167,7 +167,6 @@ Total NUNI cards: 82
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109613354-1"></script>
-    <script src="js/main.js"></script>
     <script> window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
