@@ -19,6 +19,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.cross {
+  text-decoration: line-through;
+}
+
 .mdl-trigger .mdl-layout__header-row {
   padding-left: 40px;
 }
