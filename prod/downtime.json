@@ -1,0 +1,32 @@
+{
+  "options": [
+    {
+      "name": "Read book via play on phone/tablet",
+      "weight": 1
+    },
+    {
+      "name": "Read book on kindle",
+      "weight": 1
+    },
+    {
+      "name": "Read pdf via play or drive",
+      "weight": 1
+    },
+    {
+      "name": "GTT",
+      "weight": 1
+    },
+    {
+      "name": "One of resource items",
+      "weight": 1
+    },
+    {
+      "name": "Podcast",
+      "weight": 1
+    },
+    {
+      "name": "Video",
+      "weight": 1
+    }
+  ]
+}
