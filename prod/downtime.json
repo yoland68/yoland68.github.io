@@ -1,32 +1,32 @@
 {
   "options": [
     {
-      "name": "Read book via play on phone/tablet",
-      "weight": 1
+      "name": "Read book via play on phone/tablet/kindle",
+      "weight": 10
     },
     {
-      "name": "Read book on kindle",
-      "weight": 1
-    },
-    {
-      "name": "Read pdf via play or drive",
-      "weight": 1
+      "name": "Read current pdf via play or drive",
+      "weight": 10
     },
     {
       "name": "GTT",
-      "weight": 1
+      "weight": 10
     },
     {
-      "name": "One of resource items",
-      "weight": 1
+      "name": "Engage Current",
+      "weight": 10
+    },
+    {
+      "name": "Resource Item (If not engage current)",
+      "weight": 2
     },
     {
       "name": "Podcast",
-      "weight": 1
+      "weight": 10
     },
     {
       "name": "Video",
-      "weight": 1
+      "weight": 10
     }
   ]
 }
