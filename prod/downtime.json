@@ -1,6 +1,20 @@
 {
   "options": [
     {
+      "name": "Record in habithub",
+      "weight": 10
+    },
+    {
+      "name": "Misc item in weekly.md",
+      "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
+      "weight": 10
+    },
+    {
+      "name": "Organize Todos for Today.md and Weekly.md",
+      "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
+      "weight": 10
+    },
+    {
       "name": "Read book via play on phone/tablet/kindle",
       "weight": 10
     },
