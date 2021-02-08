@@ -5,10 +5,6 @@
       "weight": 10
     },
     {
-      "name": "Read through Harmonic backend readme",
-      "weight": 20
-    },
-    {
       "name": "Misc item in weekly.md",
       "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
       "weight": 10
