@@ -2,7 +2,7 @@
   "options": [
     {
       "name": "Record in habithub",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Organize Todos for Today.md and Weekly.md",
@@ -15,15 +15,15 @@
     },
     {
       "name": "Read current pdf via play or drive",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "GTT",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Engage Current",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -46,11 +46,11 @@
     },
     {
       "name": "Podcast",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Video",
-      "weight": 10
+      "weight": 5
     }
   ]
 }
