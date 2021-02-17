@@ -1,20 +1,29 @@
 {
   "options": [
     {
+      "name": "Record in habithub",
+      "weight": 15
+    },
+    {
+      "name": "Organize Todos for Today.md and Weekly.md",
+      "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
+      "weight": 10
+    },
+    {
       "name": "Read book via play on phone/tablet/kindle",
       "weight": 10
     },
     {
       "name": "Read current pdf via play or drive",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "GTT",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Engage Current",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -28,20 +37,20 @@
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Podcast",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Video",
-      "weight": 10
+      "weight": 5
     }
   ]
 }
