@@ -11,7 +11,7 @@
     },
     {
       "name": "Read book via play on phone/tablet/kindle",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Read current pdf via play or drive",
@@ -37,20 +37,20 @@
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 5
+      "weight": 10
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 5
+      "weight": 10
     },
     {
       "name": "Podcast",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Video",
-      "weight": 5
+      "weight": 15
     }
   ]
 }
