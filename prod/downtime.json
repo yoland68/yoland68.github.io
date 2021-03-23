@@ -2,7 +2,7 @@
   "options": [
     {
       "name": "Record in habithub",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Organize Todos for Today.md and Weekly.md",
@@ -11,11 +11,11 @@
     },
     {
       "name": "Read book via play on phone/tablet/kindle",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Read current pdf via play or drive",
-      "weight": 0
+      "weight": 5
     },
     {
       "name": "GTT",
@@ -27,12 +27,12 @@
     },
     {
       "name": "Resource Item (If not engage current)",
-      "weight": 2
+      "weight": 0
     },
     {
       "name": "Misc from markdowns",
       "link": "https://github.com/yoland68/mds/blob/main/Misc.md",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
