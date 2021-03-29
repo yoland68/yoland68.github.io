@@ -2,7 +2,7 @@
   "options": [
     {
       "name": "Record in habithub",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Organize Todos for Today.md and Weekly.md",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Read book via play on phone/tablet/kindle",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Read current pdf via play or drive",
@@ -19,7 +19,7 @@
     },
     {
       "name": "GTT",
-      "weight": 5
+      "weight": 10
     },
     {
       "name": "Engage Current",
@@ -36,6 +36,11 @@
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
+      "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
+      "weight": 5
+    },
+    {
+      "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
       "weight": 5
     },
