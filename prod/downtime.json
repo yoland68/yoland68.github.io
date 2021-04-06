@@ -19,11 +19,11 @@
     },
     {
       "name": "GTT",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Engage Current",
-      "weight": 15
+      "weight": 20
     },
     {
       "name": "Resource Item (If not engage current)",
