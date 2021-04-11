@@ -2,7 +2,7 @@
   "options": [
     {
       "name": "Record in habithub",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Organize Todos for Today.md and Weekly.md",
@@ -32,7 +32,7 @@
     {
       "name": "Misc from markdowns",
       "link": "https://github.com/yoland68/mds/blob/main/Misc.md",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Podcast",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Video",
