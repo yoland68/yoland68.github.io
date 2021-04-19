@@ -27,7 +27,7 @@
     },
     {
       "name": "Resource Item (If not engage current)",
-      "weight": 2
+      "weight": 0
     },
     {
       "name": "Misc from markdowns",
