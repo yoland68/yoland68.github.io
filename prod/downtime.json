@@ -32,26 +32,26 @@
     {
       "name": "Misc from markdowns",
       "link": "https://github.com/yoland68/mds/blob/main/Misc.md",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 3
     },
     {
       "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 3
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 3
     },
     {
       "name": "Podcast",
-      "weight": 5
+      "weight": 10
     },
     {
       "name": "Video",
