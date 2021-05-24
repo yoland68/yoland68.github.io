@@ -7,7 +7,7 @@
     {
       "name": "Organize Todos for Today.md and Weekly.md",
       "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Read book via play on phone/tablet/kindle",
@@ -19,11 +19,11 @@
     },
     {
       "name": "GTT",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Engage Current",
-      "weight": 20
+      "weight": 15
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -32,26 +32,26 @@
     {
       "name": "Misc from markdowns",
       "link": "https://github.com/yoland68/mds/blob/main/Misc.md",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 3
+      "weight": 5
     },
     {
       "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 3
+      "weight": 0
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 3
+      "weight": 0
     },
     {
       "name": "Podcast",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Video",
