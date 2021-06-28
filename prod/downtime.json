@@ -19,11 +19,11 @@
     },
     {
       "name": "GTT",
-      "weight": 20
+      "weight": 15
     },
     {
       "name": "Engage Current",
-      "weight": 15
+      "weight": 20
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -32,7 +32,7 @@
     {
       "name": "Misc from markdowns",
       "link": "https://github.com/yoland68/mds/blob/main/Misc.md",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
