@@ -62,8 +62,17 @@
       "weight": 5
     },
     {
+      "name": "Status update",
+      "weight": 5
+    },
+    {
+      "name": "Lame Journal",
+      "weight": 5
+    },
+    {
       "name": "Video",
       "weight": 10
     }
+    
   ]
 }
