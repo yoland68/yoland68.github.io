@@ -23,7 +23,7 @@
     },
     {
       "name": "Engage Current",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -63,7 +63,7 @@
     },
     {
       "name": "Status update",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Lame Journal",
