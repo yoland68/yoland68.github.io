@@ -19,7 +19,7 @@
     },
     {
       "name": "GTT",
-      "weight": 30
+      "weight": 15
     },
     {
       "name": "Engage Current",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Typora break",
-      "weight": 5
+      "weight": 10
     },
     {
       "name": "Status update",
