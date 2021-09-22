@@ -19,7 +19,7 @@
     },
     {
       "name": "GTT",
-      "weight": 15
+      "weight": 10
     },
     {
       "name": "Engage Current",
@@ -55,7 +55,7 @@
     },
     {
       "name": "Typora social",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "Typora break",
@@ -67,11 +67,11 @@
     },
     {
       "name": "Lame Journal",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Video",
-      "weight": 10
+      "weight": 5
     }
     
   ]
