@@ -5,9 +5,9 @@
       "weight": 0
     },
     {
-      "name": "Organize Todos for Today.md and Weekly.md",
+      "name": "Organize Todos for Today.md",
       "link": "https://github.com/yoland68/mds/blob/main/Weekly.md",
-      "weight": 0
+      "weight": 5
     },
     {
       "name": "Read book via play on phone/tablet/kindle",
@@ -37,17 +37,17 @@
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 0
     },
     {
       "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 0
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 2
+      "weight": 0
     },
     {
       "name": "Podcast",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Video",
-      "weight": 5
+      "weight": 10
     }
     
   ]
