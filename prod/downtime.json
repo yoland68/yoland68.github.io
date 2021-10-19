@@ -37,17 +37,22 @@
     {
       "name": "Reach out to people on Airtable (BeenAWhile)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 0
+      "weight": 5
     },
     {
       "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 0
+      "weight": 5
     },
     {
       "name": "Reach out to people on Airtable (Status)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 0
+      "weight": 5
+    },
+    {
+      "name": "Airtable add info",
+      "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
+      "weight": 5
     },
     {
       "name": "Podcast",
