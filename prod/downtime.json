@@ -19,11 +19,11 @@
     },
     {
       "name": "GTT",
-      "weight": 10
+      "weight": 5
     },
     {
       "name": "Engage Current",
-      "weight": 10
+      "weight": 20
     },
     {
       "name": "Resource Item (If not engage current)",
@@ -42,7 +42,7 @@
     {
       "name": "Reach out to people on Airtable (Random)",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Reach out to people on Airtable (Status)",
@@ -52,15 +52,15 @@
     {
       "name": "Airtable add info",
       "link": "https://airtable.com/tblg3aRHuh4BDxcpk/viwspnK3T0frCUbvg?blocks=hide",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Podcast",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Typora social",
-      "weight": 5
+      "weight": 0
     },
     {
       "name": "Typora break",
@@ -76,7 +76,7 @@
     },
     {
       "name": "Video",
-      "weight": 10
+      "weight": 20
     }
     
   ]
